@@ -1,0 +1,39 @@
+
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="pixelArtTop">
+        <h1 id="pixelArtMaker">Pixel Art Maker</h1>
+        <div id="fontDesign">
+            <h2>Choose Grid Size</h2>
+            <form id="sizePicker">
+                Grid Width:
+                <input type="number" id="inputHeight" name="height" min="1" value="0">
+                Grid Height:
+                <input type="number" id="inputWidth" name="width" min="1" value="0">
+                <button type="button" class="btn btn-secondary">Create</button>
+            </form>
+            <div id="pixelArtDown">
+                <h2>Pick A Color</h2>
+                <input type="color" id="colorPicker">
+
+                <h2>Design Canvas</h2>
+            </div>
+        </div>
+        <table id="pixelCanvas"></table>
+    </div>
+    <script src="designs.js"></script>
+</body>
+</html>
